@@ -1,0 +1,105 @@
+[ 2015-12-23T21:22:37+08:00 ] 127.0.0.1 /oceanliao/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002836s ]
+
+[ 2015-12-23T21:22:47+08:00 ] 127.0.0.1 /oceanliao/index.php/Main/portal/diag/index.jsp
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002100s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002185s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001317s ]
+ERR: 非法操作:portal
+
+[ 2015-12-23T21:22:47+08:00 ] 127.0.0.1 /oceanliao/index.php/Main/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002428s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002522s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002115s ]
+ERR: 模板不存在[./Home/Tpl/Main/index.html]
+
+[ 2015-12-23T21:22:47+08:00 ] 127.0.0.1 /oceanliao/index.php/Main/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002367s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002463s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002132s ]
+ERR: 模板不存在[./Home/Tpl/Main/index.html]
+
+[ 2015-12-23T21:22:48+08:00 ] 127.0.0.1 /oceanliao/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004662s ]
+
+[ 2015-12-23T21:23:13+08:00 ] 127.0.0.1 /oceanliao/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001447s ]
+
+[ 2015-12-23T21:23:38+08:00 ] 127.0.0.1 /oceanliao/index.php/Main/phpinfo.php
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002493s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002580s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002085s ]
+ERR: 非法操作:phpinfo.php
+
+[ 2015-12-23T21:23:38+08:00 ] 127.0.0.1 /oceanliao/index.php/Main/info.php
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002639s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002725s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002671s ]
+ERR: 非法操作:info.php
+
+[ 2015-12-23T21:24:07+08:00 ] 127.0.0.1 /oceanliao/index.php/Main/%3f.jsp
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002334s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002422s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002096s ]
+ERR: 非法操作:?.jsp
+
+[ 2015-12-23T21:24:12+08:00 ] 127.0.0.1 /oceanliao/index.php/Main/nessus/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002448s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002584s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002359s ]
+ERR: 非法操作:nessus
+
+[ 2015-12-23T21:24:44+08:00 ] 127.0.0.1 /oceanliao/index.php/Main/biztalkhttpreceive.dll
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002263s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002349s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002003s ]
+ERR: 非法操作:biztalkhttpreceive.dll
+
+[ 2015-12-23T21:24:45+08:00 ] 127.0.0.1 /oceanliao/index.php/Main/biztalkhttpreceive.dll
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002258s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002345s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001935s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002010s ]
+ERR: 非法操作:biztalkhttpreceive.dll
+
+[ 2015-12-23T21:25:18+08:00 ] 127.0.0.1 /oceanliao/index.php/Main/_vti_inf.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001569s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001661s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001210s ]
+ERR: 非法操作:_vti_inf
+

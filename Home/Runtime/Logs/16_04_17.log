@@ -1,0 +1,27 @@
+[ 2016-04-17T03:07:33+08:00 ] 127.0.0.1 /oceanliao/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001663s ]
+
+[ 2016-04-17T03:07:33+08:00 ] 127.0.0.1 /oceanliao/index.php/Main/Eindex.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001541s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001611s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000901s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `ocean_message` [ RunTime:0.006343s ]
+SQL: SELECT * FROM `ocean_message` ORDER BY id DESC  [ RunTime:0.016960s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013865s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001272s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001193s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000988s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001161s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004809s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001245s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001300s ]
+

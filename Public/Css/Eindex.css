@@ -1,0 +1,413 @@
+#BODY
+{
+	width: 100%;
+	display: inline-block;
+}
+
+.clear {clear:both;}
+
+
+*
+{
+	padding: 0px;
+	margin: 0px;
+}
+
+*:focus {outline: none;}
+
+
+body 
+{
+    background-color: #eaeaea;
+    color:#666;
+    font-size:15px; 
+    font-family:"微软雅黑";
+}
+
+/* 短引用的内容可取值：''或"" */
+q:before,q:after {content:”;}  
+
+/* 缩写，图片等无边框 */
+fieldset,img,abbr,acronym {border: 0 none;}
+abbr,acronym {font-variant: normal;}
+legend {color:#000;}
+
+/* 清除特殊标记的字体和字号 */
+address,caption,cite,code,dfn,em,strong,th,var {   
+　　font-weight: normal;   
+　　font-style: normal;   
+}
+
+/* 上下标 */
+sup {vertical-align: text-top;}
+sub {vertical-align: text-bottom;}
+
+/* 设置表格的边框被合并为一个单一的边框, 指定分隔边框模型中单元格边界之间的距离为0*/
+table {   
+　　border-collapse: collapse;   
+　　border-spacing: 0;   
+}   
+
+/* 表格标题及内容居左显示 */
+caption,th {text-align: left;}
+input,img,select {vertical-align:middle;}
+
+/* 清除列表样式 */
+ol,ul {list-style: none;}  
+
+/* 输入控件字体 */
+input,button,textarea,select,optgroup,option {
+    font-family:inherit;
+    font-size:inherit;
+    font-style:inherit;
+    font-weight:inherit;
+}
+
+/* 标题元素样式清除 */ 
+
+#BODY h1,#BODY h2,#BODY h3,#BODY h4,#BODY h5,#BODY h6 {   
+　　font-weight: 0; 
+	font-size: 150%;  
+	margin-bottom: 10px; 
+} 
+
+
+
+/* 链接样式 */
+del,ins,a {text-decoration:none;}
+a:link {color:#666;}
+a:visited {color:#666;}
+a:hover,a:active,a:focus {color:#888;} 
+
+a h1:hover
+{
+	color:#888;
+}
+
+a p:hover
+{
+	color: #888;
+}   
+/* 鼠标样式 */
+input[type="submit"] {cursor: pointer;}
+button {cursor: pointer;}
+input::-moz-focus-inner { border: 0; padding: 0;}
+
+
+button 
+{
+	display: inline-block;
+	padding:5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border: 0px;
+	background-color: #4d4d4d;
+	color: #fff;
+	float: left;
+	margin-left: 10px;
+}
+
+button:hover
+{
+	background-color: #9d9d9d;
+}
+
+.button
+{
+	width: 100px;
+	height: 40px;
+	border: 0px;
+	background-color: #4d4d4d;
+	color: #fff;
+	float: left;
+	margin-top: 20px;
+}
+
+
+.button:hover
+{
+	background-color: #8d8d8d;
+}
+
+/*---------------------------------浏览器初始化结束--------------------------------*/
+
+@media screen and (min-width: 930px) {
+
+.left
+{
+	width: 300px;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	background-color: #fff;
+	float: left;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+}
+
+.left_top
+{
+	width: 100%;
+	height: 38.2%;
+	background-color: #4d4d4d;
+	float: left;
+}
+.me
+{
+	width: 120px;
+	height: 120px;
+	border-radius: 100%;
+	background-color: #ccc;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top:81%;	
+}
+
+.message
+{
+	width: 100%;
+	float: left;
+	margin-top: 100%;
+	text-align: center;
+}
+.message h1
+{
+	font-size: 25px;
+	font-weight: "微软雅黑";
+	color: #333;
+	margin-bottom: 0px;
+}
+
+.message small
+{
+	color: #666;
+}
+
+.message p
+{
+	font-size: 15px;
+	color: #333;
+	line-height: 50px;
+}
+
+.right
+{
+	display: inline-block;
+	background-color: #eee;
+	float: right;
+}
+
+.right_top
+{
+	width: 100%;
+	height: 200px;
+	border-bottom: 1px solid #ccc;
+}
+
+.right_top_body
+{
+	width: 80%;
+	display: inline-block;
+	margin-top: 20px;
+	padding: 1%;
+	line-height: 30px;
+	text-align: left;
+	margin-top: 50px;
+}
+
+.right_body
+{
+	width: 80%;
+	display: inline-block;
+	background-color: #fff;
+	margin-top: 20px;
+	padding: 1%;
+	line-height: 30px;
+	text-align: left;
+}
+
+.right_body img
+{
+	max-width:100%;
+	_width:expression(this.width > 690 ? "100%" : this.width);
+}
+
+.right_body li
+{
+	width: 45%;
+	display: inline-block;
+	margin: 10px;
+	float: left;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.right_body h1
+{
+	font-size: 18px;
+}
+
+.right_body p
+{
+	font-size: 15px;
+}
+
+.right_body li img
+{
+	width: 100%;
+	border-radius: 5px;
+} 
+
+}
+
+
+@media screen and (max-width: 930px) {
+
+.left
+{
+	width: 100%;
+	height: 300px;
+	padding: 0px;
+	margin: 0px;
+	background-color: #eee;
+	float: left;
+}
+
+.left_top
+{
+	width: 100%;
+	height: 38.2%;
+	background-color: #4d4d4d;
+	float: left;
+}
+.me
+{
+	width:120px;
+	height: 120px;
+	border-radius: 100%;
+	background-color: #ccc;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top:50%;	
+}
+
+
+.message
+{
+	width: 100%;
+	float: left;
+	margin-top: 70px;
+	text-align: center;
+}
+
+.small_screen
+{
+	width: 100%;
+	height: 20px;
+	text-align: center;
+}
+.message h1
+{
+	font-size: 25px;
+	font-weight: "微软雅黑";
+	color: #333;
+	margin-bottom: 10px;
+}
+
+.message small
+{
+	color: #666;
+}
+
+.small_screen_p
+{
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.message p
+{
+	width: 20%;
+	height: 40px;
+	font-size: 15px;
+	color: #333;
+	line-height: 50px;
+	float: left;
+}
+
+
+.right
+{
+	width: 100%;
+	display: inline-block;
+	background-color: #eee;
+	float: left;
+}
+
+.right_top
+{
+	width: 100%;
+	height: 20px;
+	border-bottom: 1px solid #ccc;
+}
+
+.right_top_body
+{
+	display: none;
+}
+
+
+
+.right_body
+{
+	width: 80%;
+	display: inline-block;
+	background-color: #fff;
+	margin-top: 20px;
+	padding: 1%;
+	line-height: 30px;
+	text-align: left;
+	overflow:hidden; 
+}
+
+/*.right_body img
+{
+
+
+max-width:200px;
+width:expression(document.body.clientWidth > 200?"200px":"auto" );
+display:block;
+border:0
+}
+*/
+.right_body li
+{
+	width: 90%;
+	display: inline-block;
+	border-radius: 5px;
+	margin-top: 50px;
+}
+
+.right_body li img
+{
+	width: 100%;
+	border-radius: 5px;
+} 
+
+.right_body h1
+{
+	font-size: 18px;
+}
+
+.right_body p
+{
+	font-size: 15px;
+}
+
+}

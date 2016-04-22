@@ -1,0 +1,13 @@
+[ 2015-11-29T15:41:18+08:00 ] 127.0.0.1 /oceanliao/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001889s ]
+
+[ 2015-11-29T15:41:18+08:00 ] 127.0.0.1 /oceanliao/index.php/Main/Eindex.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001553s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001621s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+

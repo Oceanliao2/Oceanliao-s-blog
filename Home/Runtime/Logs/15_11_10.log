@@ -1,0 +1,59 @@
+[ 2015-11-10T23:53:32+08:00 ] 127.0.0.1 /Oceanliao/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003923s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004273s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007312s ]
+INFO: [ view_filter ] --START--
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' C:\wamp\www\Oceanliao\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' C:\wamp\www\Oceanliao\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 47 行.
+INFO: ContentReplace Behavior ::run [ RunTime:0.002827s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002424s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002477s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002886s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011235s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003300s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003750s ]
+
+[ 2015-11-10T23:53:40+08:00 ] 127.0.0.1 /Oceanliao/index.php/Main
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005819s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006086s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003242s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.070429s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070715s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002815s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002747s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002750s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004339s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013319s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003403s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003621s ]
+
+[ 2015-11-10T23:54:26+08:00 ] 127.0.0.1 /Oceanliao/index.php/Main
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005755s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006054s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003402s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.035955s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036242s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002420s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002647s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002107s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002660s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010572s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003094s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003318s ]
+
