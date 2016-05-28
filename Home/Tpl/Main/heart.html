@@ -31,7 +31,8 @@
 			<div class="me">
 				<img src="__IMAGES__/me.jpg" style="border-radius:100%;">
 			</div>
-			<div class="message">
+		</div>
+		<div class="message">
 				<h1>廖海洋</h1>
 				<div class="small_screen">
 				    <small>时间不在于你拥有多少而在于你怎样使用</small>
@@ -43,8 +44,7 @@
 					<a href="__URL__/about"><p>关于</p></a>
 					<a href="__URL__/message"><p>留言</p></a>
 				</div>
-		    </div>
-		</div>
+		 </div>
 	</div>
 	<div class="right">
 		<center>
@@ -69,7 +69,19 @@
 					<a href="heart1">
 						<li><img src="__IMAGES__/pic01.jpg">
 						<h1>Music</h1>
-						<p>音乐是一种能够产生共鸣效果的声频，出自人类本体的最初生命运动，它们伴随人类产生而产生，伴随人类起源而起源，伴随人类发展而发展。它们不是人类身外之物，也不是人类最初的物质生产，而是一开始就是一种富有情感的感于外物存在的人类最初精神活动的产物。</p>
+						<p>
+						当你老了 头发白了
+						睡意昏沉
+						当你老了 走不动了
+						炉火旁打盹 回忆青春
+						多少人曾爱你青春欢唱的时辰
+						爱慕你的美丽 假意或真心
+						只有一个人还爱你虔诚的灵魂
+						爱你苍老的脸上的皱纹
+						当你老了 眼眉低垂
+						灯火昏黄不定
+						风吹过来 你的消息
+						</p>
 						</li>
 					</a>
 					<a href="heart1">

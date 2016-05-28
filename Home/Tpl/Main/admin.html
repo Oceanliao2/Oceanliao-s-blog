@@ -15,21 +15,63 @@
    <meta name="renderer" content="webkit">
    <link rel="stylesheet" type="text/css" href="__UEDITOR__/css/wangEditor-1.3.12.css">
    <link rel="stylesheet" type="text/css" href="__CSS__/admin.css">
+   <script type="text/javascript">
+    /*
+      //+----------------------------------------------------------------------
+      // | Author: Oceanliao <1576701411@qq.com>
+      // +----------------------------------------------------------------------
+      // | [Ajax文件上传]  一个小工具，ajax图片上传，图片是存在贴图网的
+      // | 服务器里的，开发的时候如果自己的服务器空间不够可以用这个来存图片。
+      // +----------------------------------------------------------------------
+    */
+    function doUpload() {
+     $("#mess").css("display","block");
+
+     var formData = new FormData($( "#uploadForm" )[0]);
+     $.ajax({
+          url:  '__URL__/img_upload',
+          type: 'POST',
+          data: formData,
+          async: false,
+          cache: false,
+          contentType: false,
+          processData: false,
+          success: function (returndata) {
+              $("#mess").css("display","none");
+              $("#url").append("图片地址 ："+returndata+"</br>");
+          },
+          error: function (returndata) {
+              alert(returndata);
+          }
+     });
+    }
+
+    </script>
 </head>
 <body>
 	<div class="o_editor">
-	
 		<form method="post" action='__URL__/add' enctype="multipart/form-data" id="form">
-			<center><input class="o_title" type="text" name="title"></center><br/>
+			<center>
+      <input class="o_title" type="text" name="title"></center><br/>
 			<textarea name="message" id='textarea1' style='height:500px; width:70%;'></textarea>
 			<br/>
-			<input type="submit" class="button">
+			<input type="submit" class="button" value="发布">
       <br/>
-      <input type="checkbox" value="1" name="slect"> 个人日记
+      主人身份验证(⊙０⊙)<input type="hidden"  name="passcode" value="???">
 
 		</form>
-	
+    </br>
+
+    <div id="mess" style="color:red; display:none">请稍后。。</div>
+    <form id="uploadForm" enctype="multipart/form-data" method="post" action="">
+        <input type="file" name="file">
+        <input type="button" value="上传" onclick="doUpload()"/>
+    </form>
+    <div id="url"></div>
 	</div>
+
+
+
 </body>
 <!--引入jquery和wangEditor.js-->   <!--注意：javascript必须放在body最后，否则可能会出现问题-->
 <script type="text/javascript" src='__UEDITOR__/js/jquery-1.10.2.min.js'></script>

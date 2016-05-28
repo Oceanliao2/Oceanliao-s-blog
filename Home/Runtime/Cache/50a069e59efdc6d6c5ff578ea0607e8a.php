@@ -28,7 +28,8 @@
 			<div class="me">
 				<img src="__IMAGES__/me.jpg" style="border-radius:100%;">
 			</div>
-			<div class="message">
+		</div>
+		<div class="message">
 				<h1>廖海洋</h1>
 				<div class="small_screen">
 				    <small>时间不在于你拥有多少而在于你怎样使用</small>
@@ -40,8 +41,7 @@
 					<a href="__URL__/about"><p>关于</p></a>
 					<a href="__URL__/message"><p>留言</p></a>
 				</div>
-		    </div>
-		</div>
+		 </div>
 	</div>
 	<div class="right">
 		<center>
@@ -60,7 +60,7 @@
 				</div>
 			</div>
 
-			<?php if(is_array($data)): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="right_body" style="background:#eaeaea" >
+			<?php if(is_array($data)): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="right_body" style="background:#fff" >
 						<h1><?php echo ($vo['title']); ?></h1>
 						<p>				
 							<div id="message_more"><?php echo ($vo['message']); ?></div>				

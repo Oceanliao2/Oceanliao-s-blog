@@ -26,7 +26,8 @@
 			<div class="me">
 				<img src="__IMAGES__/me.jpg" style="border-radius:100%;">
 			</div>
-			<div class="message">
+		</div>
+		<div class="message">
 				<h1>廖海洋</h1>
 				<div class="small_screen">
 				    <small>时间不在于你拥有多少而在于你怎样使用</small>
@@ -38,8 +39,7 @@
 					<a href="__URL__/about"><p>关于</p></a>
 					<a href="__URL__/message"><p>留言</p></a>
 				</div>
-		    </div>
-		</div>
+		 </div>
 	</div>
 	<div class="right">
 		<center>

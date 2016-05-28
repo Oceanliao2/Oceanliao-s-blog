@@ -1,5 +1,4 @@
 <?php
-	// 本类由系统自动生成，仅供测试用途
 	import('ORG.Util.Session');
 	class MainAction extends Action {
 	    public function index()
@@ -24,6 +23,60 @@
 			$this->display();
 		}
 
+		public function admin()
+		{
+			$this->display();
+		}
+
+		public function oceanliao()
+		{
+			$message=M('message');
+	    	$data=$message->order('id DESC')->select();
+	    	$this->assign('data',$data);
+			$this->display();
+		}
+
+		public function del()
+		{
+			$id = $_GET['id'];
+			$message = M("message");
+		    $result = $message->where(" id = '$id' ")->delete();
+
+		    if($result !== false){
+		        $this->success('删除 ' . $result . ' 条数据');
+		    }else{
+		        $this->error('删除数据失败');
+		    }
+		}
+
+
+		public function update_page()
+		{
+			$message=M('message');
+			$id = $_GET['id'];
+			Session::set('id',$id);
+	    	$data=$message->where("id = '$id'")->select();
+	    	$this->assign('data',$data);
+			$this->display();
+		}
+
+		public function update()
+		{
+		    $message = M("message");
+		    // 需要更新的数据
+		    $data['message'] = $_POST['message'];
+		    $data['title'] = $_POST['title'];
+		    // 更新的条件
+		    $condition['id'] = $_SESSION['id'];
+
+		    $result = $message->where($condition)->save($data);
+
+			if($result !== false){
+		        $this->success('数据更新成功','oceanliao');
+		    }else{
+		        $this->error('数据更新失败');
+		    }
+		}
 
 		public function about()
 	    {
@@ -52,29 +105,19 @@
 			$this->display();
 		}
 
-
-		public function admin()
-		{
-			$this->display();
-			
-		}
-
 		public function add()
 		{
-			if($_POST["slect"]== 1)
-			{
-				$Message = M("day");
-		        $Message->create();
-				$Message->add();
-				$this->success("日记添加成功","Eindex");
-			}
-
-			else
+			if($_POST["passcode"]== 'oceanliao')
 			{
 				$Message = M("message");
 		        $Message->create();
 				$Message->add();
 				$this->success("添加成功","Eindex");
+			}
+
+			else
+			{
+				$this->error("哼！敢冒充主人，才不给你添加呢");
 			}
 
 		}
@@ -115,20 +158,21 @@
 			$this->success("添加成功");
 		}
 
-		public function search()
+		public function img_upload()
 		{
-			import('ORG.Util.Kmp');
-		//	kmp::displayVar();
-
-			$a  = new  Kmp ();
- 			$a -> displayVar ();
-
-
- 			$b=2.4444;
- 		//	printf("%2"$b);
-
- 			//import("ORG.Util.AjaxPage");// 导入分页类  注意导入的是自己写的AjaxPage类
-		//	$p = new AjaxPage($count, $limitRows,"user"); //第三个参数是你需要调用换页的ajax函数名
+				import('ORG.Net.UploadFile');//引入上传类
+				$upload = new UploadFile();// 实例化上传类
+				$upload->maxSize  = 3145728 ;// 设置附件上传大小
+				$upload->allowExts  = array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
+				$upload->savePath =  './Uploads/';// 设置附件上传目录
+				// $upload->thumb= ture; //设置缩略图
+				// $upload->thumbPrefix = 'thumb2_,thumb_';//生产2张缩略图
+				// $upload->thumbMaxWidth      = '200,200'; //设置缩略图最大宽度
+				// $upload->thumbMaxHeight     = '200,200';//设置缩略图最大高度
+				$upload->upload();
+				$info =  $upload->getUploadFileInfo();
+				$data ='http://119.29.135.20/ocean/Uploads/'.$info[0]['savename'];
+				$this->ajaxReturn($data);
 		}
 }
 
