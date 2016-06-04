@@ -13,7 +13,9 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
    <!--使双核浏览器默认极速模式-->
    <meta name="renderer" content="webkit">
-   <link rel="stylesheet" type="text/css" href="__UEDITOR__/css/wangEditor-1.3.12.css">
+   <link rel="stylesheet" type="text/css" href="__UEDITOR__/dist/css/wangEditor.min.css">
+   <link rel="stylesheet" type="text/css" href="__UEDITOR__/static/highlightjs/dark.css">
+
    <link rel="stylesheet" type="text/css" href="__CSS__/admin.css">
    <script type="text/javascript">
     /*
@@ -49,11 +51,11 @@
     </script>
 </head>
 <body>
-	<div class="o_editor">
+<div class="o_editor">
 		<form method="post" action='__URL__/add' enctype="multipart/form-data" id="form">
 			<center>
-      <input class="o_title" type="text" name="title"></center><br/>
-			<textarea name="message" id='textarea1' style='height:500px; width:70%;'></textarea>
+      <input class="o_title" type="text" name="title" placeholder="标题"></center><br/>
+			<textarea name="message" id='textarea1' style='height:800px; width:100%;'></textarea>
 			<br/>
 			<input type="submit" class="button" value="发布">
       <br/>
@@ -68,18 +70,21 @@
         <input type="button" value="上传" onclick="doUpload()"/>
     </form>
     <div id="url"></div>
-	</div>
+</div>
 
 
 
 </body>
 <!--引入jquery和wangEditor.js-->   <!--注意：javascript必须放在body最后，否则可能会出现问题-->
-<script type="text/javascript" src='__UEDITOR__/js/jquery-1.10.2.min.js'></script>
-<script type="text/javascript" src='__UEDITOR__/js/wangEditor-1.3.12.min.js'></script>
+
+<script type="text/javascript" src="__UEDITOR__/dist/js/lib/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="__UEDITOR__/dist/js/wangEditor.js"></script>
+
+
 <!--注意：javascript必须放在body最后，否则可能会出现问题-->
 <script type="text/javascript">
-  $(function(){
-        var editor = $('#textarea1').wangEditor();
-    });
+    wangEditor.config.mapAk = 'SsUyTglD4XCVznNRDDIU3F4D';  // 此处换成自己申请的密钥
+    var editor = new wangEditor('textarea1');
+    editor.create();
 </script>
 </html>

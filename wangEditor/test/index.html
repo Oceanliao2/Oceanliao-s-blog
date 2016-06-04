@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>wangEditor2 test</title>
+    <link rel="stylesheet" type="text/css" href="../dist/css/wangEditor.min.css">
+    <style type="text/css">
+        #editor-trigger {
+            height: 300px;
+            max-height: 400px;
+        }
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+        }
+    </style>
+</head>
+<body style="padding:0 20px;">
+    <p>wangEditor2.0 支持 IE8 浏览器</p>
+    <div id="editor-container" class="container">
+
+        <textarea id="editor-trigger" style="display:none;">
+            <p>请输入内容...</p>
+        </textarea>
+    </div>
+    <p><br></p>
+
+    <script type="text/javascript" src="../dist/js/lib/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../dist/js/wangEditor.js"></script>
+    <!--<script type="text/javascript" src="../dist/js/wangEditor.min.js"></script>-->
+    <script type="text/javascript">
+        wangEditor.config.mapAk = 'SsUyTglD4XCVznNRDDIU3F4D';  // 此处换成自己申请的密钥
+        var editor = new wangEditor('editor-trigger');
+        editor.create();
+    </script>
+</body>
+</html>

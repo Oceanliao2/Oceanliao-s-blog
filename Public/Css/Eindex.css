@@ -231,8 +231,7 @@ button:hover
 
 .right_body img
 {
-	max-width:100%;
-	_width:expression(this.width > 690 ? "100%" : this.width);
+	width: 100%; height: 100%; vertical-align: middle;
 }
 
 .right_body li
@@ -265,6 +264,11 @@ button:hover
 
 
 @media screen and (max-width: 930px) {
+
+.right_body img
+{
+	width:100%;
+}
 
 .left
 {
