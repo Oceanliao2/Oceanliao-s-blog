@@ -59,7 +59,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="right_body">
+			<div class="right_body2">
 			<form method="post" action='__URL__/leave_word' enctype="multipart/form-data" id="form"> 
 					留下你的大名吧：<br><br>
 					<input name="name" style="padding:5px" type="text"><br><br>
@@ -85,6 +85,12 @@
 <script type="text/javascript">
     wangEditor.config.mapAk = 'SsUyTglD4XCVznNRDDIU3F4D';  // 此处换成自己申请的密钥
     var editor = new wangEditor('textarea1');
+
+     // 自定义菜单
+    editor.config.menus = [
+        'emotion'
+     ];
+
     editor.create();
 </script>
 </html>

@@ -1,7 +1,7 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
-	<title>廖海洋的博客1</title>
+	<title>廖海洋的博客</title>
 	<!--设置页面编码为UTF-8-->  
 <meta http-equiv="Content-Type"content="text/html; charset=UTF-8"/> 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,11 +16,48 @@
 	<link href="__CSS__/Eindex.css" rel="stylesheet">
 	<link href="__CSS__/ionicons.min.css" rel="stylesheet">
 	<script src="__JS__/jquery.min.js"></script>
-	<script src="__JS__/jQuery.autoIMG.min.js"></script>
 	
 	<script src="__JS__/Eindex.js"></script>
-   <link rel="stylesheet" type="text/css" href="__UEDITOR__/dist/css/wangEditor.min.css">
-   <link rel="stylesheet" type="text/css" href="__UEDITOR__/static/highlightjs/dark.css">
+    <link rel="stylesheet" type="text/css" href="__UEDITOR__/dist/css/wangEditor.min.css">
+    <link rel="stylesheet" type="text/css" href="__UEDITOR__/static/highlightjs/dark.css">
+
+
+	<style type="text/css">
+
+	blockquote {
+	  display: block;
+	  border-left: 8px solid #d0e5f2;
+	  padding: 15px 10px;
+	  margin: 10px 0;
+	  line-height: 1.4;
+	  font-size: 100%;
+	  background-color: #f1f1f1;
+	}
+
+	table {
+	  border: none;
+	  border-collapse: collapse;
+	}
+
+	table td,
+	table th {
+	  border: 1px solid #f1f1f1;
+	  padding: 3px 5px;
+	  min-width: 50px;
+	  height: 20px;
+	}
+
+	pre {
+	  border: 1px solid #ccc;
+	  background-color: #f8f8f8;
+	  padding: 10px;
+	  margin: 5px 0px;
+	  font-size: 0.8em;
+	  border-radius: 3px;
+	}
+
+	</style>
+
 </head>
 <body>
 <div id="BODY">
@@ -67,7 +104,7 @@
 							<div id="message_more"><?php echo ($vo['message']); ?></div>				
 						</p>
 				</div><?php endforeach; endif; else: echo "" ;endif; ?>
-			<div class="right_body">
+			<div class="right_body2">
 			<form method="post" action='__URL__/leave_message' enctype="multipart/form-data" id="form"> 
 					留下你的大名吧：<br><br>
 					<input name="name" style="padding:5px" type="text"><br><br>
@@ -75,7 +112,8 @@
 					<input type="submit" class="button" value="留言">
 			</form>		
 			</div>
-			<?php if(is_array($leave_message)): $i = 0; $__LIST__ = $leave_message;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="right_body">
+
+			<?php if(is_array($leave_message)): $i = 0; $__LIST__ = $leave_message;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="right_body2">
 					<h1><?php echo ($vo['name']); ?>:</h1>
 					<?php echo ($vo['message']); ?>
 				</div><?php endforeach; endif; else: echo "" ;endif; ?>
@@ -93,6 +131,12 @@
 <script type="text/javascript">
     wangEditor.config.mapAk = 'SsUyTglD4XCVznNRDDIU3F4D';  // 此处换成自己申请的密钥
     var editor = new wangEditor('textarea1');
+
+     // 自定义菜单
+    editor.config.menus = [
+        'emotion'
+     ];
+
     editor.create();
 </script>
 </html>

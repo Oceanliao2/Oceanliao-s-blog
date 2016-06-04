@@ -58,9 +58,15 @@
 				</div>
 			</div>
 			<div class="right_body">
-					<h1>欢迎来到我的个人轻博客(响应式设计)</h1>
-					<p>大家好，我叫廖海洋，<a href="#">点此查看我的简历</a>。欢迎来到我的个人博客,博客全站采用<a href="#">php</a>，以及HTMl5+CSS3自适应屏幕的<a href="#">响应式设计</a>。适合初学者学习借鉴。<a href="#">点此下载源码</a>。我现在是一名大学生，在<a href="#">石河子大学</a>就读计算机科学与技术专业，我对计算机有着狂热的兴趣，这个个人博客是我大二时的课程设计作业，也是我一直想要做的！我将我的学习经验以及遇到的问题全部都记录在的这里，有关于c,c++,java等算法的讲解; php,thinkphp等web开发遇到的问题。HTML,jQuery,AngularJs,Ajax等web前端的经验; ionic,Android等移动端的相关开发;学习交流可以通过QQ:1576701411联系我，也欢迎大神批评指点。大家好，我叫廖海洋，<a href="#">点此查看我的简历</a>。欢迎来到我的个人博客,博客全站采用<a href="#">php</a>，以及HTMl5+CSS3自适应屏幕的<a href="#">响应式设计</a>。适合初学者学习借鉴。<a href="#">点此下载源码</a>。我现在是一名大学生，在<a href="#">石河子大学</a>就读计算机科学与技术专业，我对计算机有着狂热的兴趣，这个个人博客是我大二时的课程设计作业，也是我一直想要做的！我将我的学习经验以及遇到的问题全部都记录在的这里，有关于c,c++,java等算法的讲解; php,thinkphp等web开发遇到的问题。HTML,jQuery,AngularJs,Ajax等web前端的经验; ionic,Android等移动端的相关开发;学习交流可以联系我，也欢迎大神批评指点。
+					<h1>欢迎来到我的个人博客</h1>
+					<p>
+					廖海洋的博客</br>
 
+					Simple and Open source blogs.</br>
+
+					<a href="https://www.oceanliao.com/oceanliao">https://www.oceanliao.com/oceanliao</a></br>
+
+					Copyright © 2014 Pandao, The MIT License.</br>
 					<br/>
 					QQ:1576701411<br/>
 					TEL:18290777865<br/>

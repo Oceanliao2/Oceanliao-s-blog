@@ -52,9 +52,9 @@
 </head>
 <body>
 <div class="o_editor">
-    <form method="post" action='__URL__/add' enctype="multipart/form-data" id="form">
+    <form method="post" action='__URL__/update' enctype="multipart/form-data" id="form">
       <center>
-      <input class="o_title" type="text" name="title" placeholder="标题"></center><br/>
+      <input class="o_title" type="text" name="title" placeholder="标题" value="<?php echo ($data[0]['title']); ?>"></center><br/>
       <textarea name="message" id='textarea1' style='height:800px; width:100%;'><?php echo ($data[0]['message']); ?> </textarea>
       <br/>
       <input type="submit" class="button" value="发布">
